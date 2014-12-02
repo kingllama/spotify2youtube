@@ -1,7 +1,7 @@
 
 var getSong = function(){
   var video = document.title;
-  var song = video.replace(/(\(.*\))*(\[.*\])*( - YouTube$)/,'').split(' ').join('+');
+  var song = video.replace(/(\(.*\))|(\[.*\])|( - YouTube$)/g,'').split(' ').join('+');
   $.get(
     "https://api.spotify.com/v1/search?q="+ song + "&type=track", function(data){
       var songUri = data.tracks.items[0].uri
