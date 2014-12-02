@@ -9,6 +9,7 @@
     "128": "yt2spotify128.png"
   },
   "author": "king_llama",
+  "homepage_url": "https://github.com/kingllama/spotify2youtube",
   "permissions": ["https://www.youtube.com/", "webNavigation", "tabs"],
   "content_scripts": [
     {
