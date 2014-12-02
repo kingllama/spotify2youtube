@@ -3,7 +3,7 @@
 
   "name": "YouTube2Spotify",
   "description": "A chrome extension for playing music from YouTube through Spotify",
-  "version": "0.1",
+  "version": "1.0",
 
   "permissions": ["https://www.youtube.com/", "webNavigation", "tabs"],
   "content_scripts": [
