@@ -3,14 +3,14 @@
 
   "name": "YouTube2Spotify",
   "description": "A chrome extension for playing music from YouTube through Spotify",
-  "version": "1.0",
+  "version": "2.0",
   "icons": {
     "48": "yt2spotify48.png",
     "128": "yt2spotify128.png"
   },
   "author": "king_llama",
   "homepage_url": "https://github.com/kingllama/spotify2youtube",
-  "permissions": ["https://www.youtube.com/", "webNavigation", "tabs"],
+  "permissions": ["https://www.youtube.com/", "webNavigation", "tabs", "storage"],
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
@@ -21,5 +21,9 @@
   "short_name": "yt2sptfy",
   "web_accessible_resources": [
     "spotifylogo.png"
-  ]
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  }
 }
